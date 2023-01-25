@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WWWeather</title>
+</head>
+
+<body>
+    <nav class="nav-extended">
+        <div class="nav-wrapper row">
+            <h1 href="#" class="brand-logo">WWWeather</h1>
+        </div>
+        <div class="nav-content row">
+            <div class="col s4"></div>
+            <div class="col s8">
+                <ul class="tabs tabs-transparent gray darken-4">
+                    <li class="tab gray darken-4"><a class="active" href="#current-weather">Current Weather</a></li>
+                    <li class="tab gray darken-4"><a href="#5-day">5 Day Forecast</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="row">
+            <div class="col s4" id="left-div">
+                <div class="input-field">
+                    <input id="textarea1" type="text" class="white-text"></input>
+                    <label class="none" for="textarea1">Search For A City!</label>
+                    <a class="btn-floating btn-small waves-effect waves-light transparent"><i class="material-icons">location_on</i></a>
+                </div>
+                <!-- <div id="searched-city">
+                    <h3 id="city">Salt Lake City</h3>
+                    <h3 id="city">Salt Lake City</h3>
+                    <h3 id="city">Salt Lake City</h3>
+                    <h3 id="city">Salt Lake City</h3>
+                    <h3 id="city">Salt Lake City</h3>
+                    <h3 id="city">Salt Lake City</h3>
+                    <h3 id="city">Salt Lake City</h3>
+                </div> -->
+            </div>
+            <div class="col s8" id="right-div">
+                <div class="container content-container">
+                    <div id="current-weather" class="content">
+                        <div>
+                            <h2>Use the searchbar!</h2>
+                        </div>
+                        <!-- <div id="wthr-info">
+                            <h3>Temp: 76°F</h3>
+                            <h3>Wind: 8.43 MPH</h3>
+                            <h3>Humididty: 44%</h3>
+                        </div> -->
+                    </div>
+                    <div id="5-day" class="content">
+                        <div class="card">
+                            <div class="card-tabs">
+                              <ul class="tabs tabs-fixed-width">
+                                <li class="tab"><a href="#test4">Test 1</a></li>
+                                <li class="tab"><a href="#test5">Test 2</a></li>
+                                <li class="tab"><a href="#test6">Test 3</a></li>
+                                <li class="tab"><a href="#test7">Test 4</a></li>
+                                <li class="tab"><a href="#test8">Test 5</a></li>
+                              </ul>
+                            </div>
+                            <div class="card-content">
+                              <div id="test4">
+                                <div>
+                                    <h2>Use the searchbar!</h2>
+                                </div>
+                                <!-- <div id="future-info">
+                                    <h3>Temp: 76°F</h3>
+                                    <h3>Wind: 8.43 MPH</h3>
+                                    <h3>Humididty: 44%</h3>
+                                </div> -->
+                              </div>
+                              <div id="test5">Test 2</div>
+                              <div id="test6">Test 3</div>
+                              <div id="test7">Test 4</div>
+                              <div id="test8">Test 5</div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

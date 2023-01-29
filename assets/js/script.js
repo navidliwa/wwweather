@@ -18,6 +18,9 @@ $(document).ready(function () {
     $('#searchBtn').on('click', function (event) {
         searchedCity = getSearchedCity();
 
+        var background = document.body;
+        background.style.backgroundImage = `url("https://source.unsplash.com/1920x1080/?${searchedCity}")`
+
         // Push searched city to searchHistory array
         searchHistory.push(searchedCity);
         // Save search history array to local storage
@@ -41,6 +44,10 @@ $(document).ready(function () {
 
         $('#city').on('click', function(event) {
             var clickedCity = event.target.innerHTML;
+
+            var background = document.body;
+            background.style.backgroundImage = `url("https://source.unsplash.com/1920x1080/?${clickedCity}")`
+
             // API url for current weather data
             var url = `https://api.openweathermap.org/data/2.5/weather?q=${clickedCity}&appid=a09ff729a95cbb2afe677c333b6cde65&units=imperial`;
             // API url for 5 day forecast

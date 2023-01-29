@@ -14,7 +14,6 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    padding: 0 0 1rem 0;
 }
 
 .nav-extended {
@@ -70,6 +69,10 @@ input[type="text"]:not(.brower-default):focus:not([readonly]) + label {
     border-radius: 24px;
     text-align: center;
     padding: 1rem 0 1rem 0;
+}
+
+#city {
+    cursor: pointer;
 }
 
 #left-div {
